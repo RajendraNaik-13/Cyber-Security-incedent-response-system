@@ -16,11 +16,7 @@ from paramiko import RSAKey
 LOG_DIR = 'Logs'
 os.makedirs(LOG_DIR, exist_ok=True)
 
-logging.basicConfig(
-    filename=os.path.join(LOG_DIR, 'ssh.log'),
-    level=logging.INFO,
-    format='%(asctime)s - %(levelname)s - %(message)s'
-)
+\
 
 # RSA key config
 SERVER_KEY_PATH = 'certificate/rsa_key.pem'
